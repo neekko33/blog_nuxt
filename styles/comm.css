@@ -1,0 +1,152 @@
+.comm-left {
+  background-color: #fff;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  border: 1px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.comm-box {
+  margin-bottom: 0.3rem;
+  background-color: #fff;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  border: 1px solid #eee;
+}
+
+.comm-main {
+  margin-top: 0.5rem;
+}
+
+.list-link {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.ant-fullcalendar-header {
+  display: none;
+}
+
+.ant-fullcalendar {
+  border-top: none !important;
+}
+
+.site-back-top-basic {
+  color: rgba(64, 64, 64, 0.6);
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 25em;
+  /* line-height: 25em; */
+  /* background: #364d79; */
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide a {
+  padding-top: 13em;
+}
+
+.ant-carousel .slick-slide h1 {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-shadow: 2px 2px 1px #000;
+}
+
+.ant-carousel .slick-dots li button {
+  background: #fdd10b !important;
+}
+
+.slick-slide div {
+  height: 100%;
+}
+
+.yystv {
+  background-size: cover;
+  background-position: top center;
+}
+
+@media screen and (max-width: 414px) {
+  .yystv h1 {
+    font-size: 1.5em !important;
+  }
+}
+
+.list-title {
+  font-size: 1.3rem;
+  color: #1e90ff;
+  padding: 0 0.5rem;
+}
+
+.list-context {
+  color: #777;
+  padding: 0.5rem;
+}
+
+.list-icon {
+  padding: 0.5rem 0;
+  color: #aaa;
+}
+
+.list-icon span {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+pre {
+  display: block;
+  background-color: #283646 !important;
+  padding: 0.5rem !important;
+  overflow-y: auto;
+  font-weight: 300;
+  font-family: Menlo, monospace;
+  border-radius: 0.3rem;
+}
+
+pre > code {
+  border: 0px !important;
+  background-color: #283646 !important;
+  color: #fff;
+}
+
+code {
+  display: inline-block;
+  background-color: #f3f3f3;
+  border: 1px solid #fdb9cc;
+  border-radius: 3px;
+  font-size: 13px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #4f4f4f;
+  margin: 0px 3px;
+}
+
+.list-context img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  max-width: 1000px !important;
+  display: block;
+  margin: 8px auto;
+}
+
+.ant-list-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: transparent;
+}
+
+.ant-list-item {
+  padding: 12px 5px;
+}
+
+.bread-div {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  background-color: #e1f0ff;
+  border-radius: 5px;
+  font-weight: bold;
+}
