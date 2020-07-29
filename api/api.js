@@ -1,8 +1,8 @@
 import axios from 'axios'
 import base from 'ant-design-vue/lib/base'
 
-// const baseUrl = 'http://212.64.78.155:7001/api/v5/'
-const baseUrl = 'http://127.0.0.1:7001/api/v5/'
+const baseUrl = 'http://212.64.78.155:7001/api/v5/'
+// const baseUrl = 'http://127.0.0.1:7001/api/v5/'
 
 export const getArticle = (pageNum, pageSize) => {
   return axios({
