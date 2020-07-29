@@ -11,7 +11,7 @@
               </a-breadcrumb-item>
               <a-breadcrumb-item>
                 {{
-                myList.length > 0 ? myList[0].typeName : '暂无文章'
+                myList.length > 0 ? myList[0].type.typeName : '暂无文章'
                 }}
               </a-breadcrumb-item>
             </a-breadcrumb>

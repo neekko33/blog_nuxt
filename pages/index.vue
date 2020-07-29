@@ -66,9 +66,9 @@ export default {
     const articleList = await getArticle(1, 10)
     const yystvList = await getYystvData()
     const notice = await getNotice()
-    console.log(yystvList)
+    console.log(yystvList);
     return {
-      myList: articleList.data.data,
+      myList: articleList.data.data.articles,
       yystvData: yystvList.data.data,
       noticeItem: [notice.data.data]
     }

@@ -1,7 +1,8 @@
 import axios from 'axios'
 import base from 'ant-design-vue/lib/base'
 
-const baseUrl = 'http://212.64.78.155:7001/api/v4/'
+// const baseUrl = 'http://212.64.78.155:7001/api/v5/'
+const baseUrl = 'http://127.0.0.1:7001/api/v5/'
 
 export const getArticle = (pageNum, pageSize) => {
   return axios({
@@ -13,7 +14,7 @@ export const getArticle = (pageNum, pageSize) => {
 export const getNotice = () => {
   return axios({
     method: 'get',
-    url: baseUrl + 'notice'
+    url: baseUrl + 'article/4'
   })
 }
 
@@ -58,12 +59,5 @@ export const getYystvData = () => {
   return axios({
     method: 'get',
     url: baseUrl + 'yysTV'
-  })
-}
-
-export const getUserInfo = (id) => {
-  return axios({
-    method: 'get',
-    url: baseUrl + `user/${id}`
   })
 }

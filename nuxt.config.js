@@ -18,12 +18,14 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#1e90ff' },
   /*
   ** Global CSS
   */
   css: [
-    'ant-design-vue/dist/antd.css'
+    'ant-design-vue/dist/antd.css',
+    'assets/main.css',
+    'styles/comm.css'
   ],
   /*
   ** Plugins to load before mounting the App

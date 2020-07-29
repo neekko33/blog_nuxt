@@ -19,39 +19,14 @@
 </template>
 
 <script>
-import { getUserInfo } from '../api/api'
 export default {
   name: 'Author',
   props: {
-    id: Number,
-  },
-  data() {
-    return {
-      author: {
-        id: null,
-        avatar: '',
-        username: '',
-        nickname: '',
-        tags: '',
-        address: '',
-        introduce: '',
-      },
-    }
-  },
-  created() {
-    this.getData()
+    author: Object,
   },
   computed: {
     formatTags() {
       return this.author.tags.split(',')
-    },
-  },
-  methods: {
-    async getData() {
-      const {
-        data: { data },
-      } = await getUserInfo(this.id)
-      this.author = data
     },
   },
 }

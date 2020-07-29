@@ -9,7 +9,7 @@
               <a-breadcrumb-item>
                 <a href="/">首页</a>
               </a-breadcrumb-item>
-              <a-breadcrumb-item>{{ article.typeName }}</a-breadcrumb-item>
+              <a-breadcrumb-item>{{ article.type.typeName }}</a-breadcrumb-item>
               <a-breadcrumb-item>{{ article.title }}</a-breadcrumb-item>
             </a-breadcrumb>
           </div>
@@ -22,11 +22,11 @@
               </span>
               <span>
                 <a-icon type="tags" />
-                {{ article.typeName }}
+                {{ article.type.typeName }}
               </span>
               <span>
                 <a-icon type="user" />
-                {{ article.username }}
+                {{ article.user.username }}
               </span>
             </div>
             <div class="detailed-content" v-html="html"></div>
@@ -34,7 +34,7 @@
         </div>
       </a-col>
       <a-col class="comm-right" :xs="0" :sm="0" :md="8" :lg="6" :xl="5">
-        <Author-Info :id="article.userId" />
+        <Author-Info :author="article.user" />
         <a-affix :offsetTop="5" v-if="tocItems.length > 0">
           <div class="detailed-nav comm-box">
             <div class="nav-title">文章目录</div>

@@ -17,11 +17,11 @@
           </span>
           <span>
             <a-icon type="tags" />
-            {{ item.typeName }}
+            {{ item.type.typeName }}
           </span>
           <span>
             <a-icon type="user" />
-            {{ item.username }}
+            {{ item.user.username }}
           </span>
         </div>
         <div class="list-context" v-html="formatMarkdown(item.introduce)"></div>
