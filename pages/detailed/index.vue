@@ -124,6 +124,18 @@ export default {
       }
       marked.setOptions({
         renderer: renderer,
+        highlight: function(code, lang) {
+          console.log(lang)
+          switch (lang) {
+            case '':
+              lang = 'C'
+              break
+            case 'mysql':
+              lang = 'sql'
+              break
+          }
+          return hljs.highlight(lang, code).value
+        },
         gfm: true,
         pedantic: false,
         tables: true,
@@ -131,10 +143,7 @@ export default {
         smartLists: true,
         smartypants: false,
         sanitize: false,
-        xhtml: false,
-        highlight: function(code) {
-          return hljs.highlightAuto(code).value
-        }
+        xhtml: false
       })
     },
     add(text, level) {
@@ -172,7 +181,7 @@ export default {
 </script>
 
 <style src="../../styles/comm.css"></style>
-<style src="../../node_modules/highlight.js/styles/monokai-sublime.css" />
+<style src="../../node_modules/highlight.js/styles/github.css"></style>
 <style>
 .detailed-title {
   font-size: 1.8rem;
