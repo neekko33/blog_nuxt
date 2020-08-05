@@ -125,7 +125,6 @@ export default {
       marked.setOptions({
         renderer: renderer,
         highlight: function(code, lang) {
-          console.log(lang)
           switch (lang) {
             case '':
               lang = 'C'
